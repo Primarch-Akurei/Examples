@@ -46,11 +46,11 @@ namespace RandomEngine
 
         public void initializeRandEngine()
         {
-            rand[0] = new Random();
-            Thread.Sleep(100);
-            rand[1] = new Random();
-            Thread.Sleep(100);
-            rand[2] = new Random();
+            for(int a = 0; a < 3;a++)
+            {
+                rand[a] = new Random();
+                Thread.Sleep(100);
+            }
         }
 
         public int Next(int maxValue)
