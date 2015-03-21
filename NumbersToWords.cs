@@ -82,17 +82,17 @@ namespace NumberToWords
 			
 			while(countOccurances(numberWord, "thousand") > 1)
 			{
-				numberWord = ReplaceFirst(numberWord, "thousand", "");
+				numberWord = replaceFirst(numberWord, "thousand", "");
 			}
 			
 			while(countOccurances(numberWord, "million") > 1)
 			{
-				numberWord = ReplaceFirst(numberWord, "million", "");
+				numberWord = replaceFirst(numberWord, "million", "");
 			}
 			
 			while(countOccurances(numberWord, "billion") > 1)
 			{
-				numberWord = ReplaceFirst(numberWord, "billion", "");
+				numberWord = replaceFirst(numberWord, "billion", "");
 			}
 			
 			numberWord = numberWord.Replace("  ", " ");
@@ -116,7 +116,7 @@ namespace NumberToWords
 			return myOccurances;
 		}
 		
-		private string ReplaceFirst(string text, string search, string replace)
+		private string replaceFirst(string text, string search, string replace)
 		{
   			int pos = text.IndexOf(search);
   			
