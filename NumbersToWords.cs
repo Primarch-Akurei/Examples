@@ -180,76 +180,76 @@ namespace NumberToWords
 					}
 					break;
 				case 2: if((myIndex -1)%3 == 0)
-							{
-								numberWord = "twenty";
-							}
-							else
-							{
-								numberWord = "two";
-							}
+					{
+						numberWord = "twenty";
+					}
+					else
+					{
+						numberWord = "two";
+					}
 					break;
 				case 3: if((myIndex -1)%3 == 0)
-							{
-								numberWord = "thirty";
-							}
-							else
-							{
-								numberWord = "three";
-							}
+					{
+						numberWord = "thirty";
+					}
+					else
+					{
+						numberWord = "three";
+					}
 					break;
 				case 4: if((myIndex -1)%3 == 0)
-							{
-								numberWord = "fourty";
-							}
-							else
-							{
-								numberWord = "four";
-							}
+					{
+						numberWord = "fourty";
+					}
+					else
+					{
+						numberWord = "four";
+					}
 					break;
 				case 5: if((myIndex -1)%3 == 0)
-							{
-								numberWord = "fifty";
-							}
-							else
-							{
-								numberWord = "five";
-							}
+					{
+						numberWord = "fifty";
+					}
+					else
+					{
+						numberWord = "five";
+					}
 					break;
 				case 6: if((myIndex -1)%3 == 0)
-							{
-								numberWord = "sixty";
-							}
-							else
-							{
-								numberWord = "six";
-							}
+					{
+						numberWord = "sixty";
+					}
+					else
+					{
+						numberWord = "six";
+					}
 					break;
 				case 7: if((myIndex -1)%3 == 0)
-							{
-								numberWord = "seventy";
-							}
-							else
-							{
-								numberWord = "seven";
-							}
+					{
+						numberWord = "seventy";
+					}
+					else
+					{
+						numberWord = "seven";
+					}
 					break;
 				case 8: if((myIndex -1)%3 == 0)
-							{
-								numberWord = "eighty";
-							}
-							else
-							{
-								numberWord = "eight";
-							}
+					{
+						numberWord = "eighty";
+					}
+					else
+					{
+						numberWord = "eight";
+					}
 					break;
 				case 9: if((myIndex -1)%3 == 0)
-							{
-								numberWord = "ninety";
-							}
-							else
-							{
-								numberWord = "nine";
-							}
+					{
+						numberWord = "ninety";
+					}
+					else
+					{
+						numberWord = "nine";
+					}
 					break;
 			}
 			
