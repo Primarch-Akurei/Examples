@@ -27,6 +27,12 @@ namespace NumberToWords
 			string messyWord = "";
 			List<int> numberValueList = new List<int>{};
 			
+			if(myNumberString == "0")
+			{
+				richTextBox1.Text = "Zero";
+				return;
+			}
+			
 			for(int a = myNumberString.Length - 1; a >= 0; a--)
 			{
 				stringBuffer = myNumberString[a].ToString();
