@@ -114,66 +114,6 @@ namespace NumberToWords
 			dirtyMessage = dirtyMessage.Replace("ten quadrillion eight quadrillion", "eighteen quadrillion");
 			dirtyMessage = dirtyMessage.Replace("ten quadrillion nine quadrillion", "nineteen quadrillion");
 			
-			dirtyMessage = dirtyMessage.Replace("ten quintillion one quintillion", "eleven quintillion");
-			dirtyMessage = dirtyMessage.Replace("ten quintillion two quintillion", "twelve quintillion");
-			dirtyMessage = dirtyMessage.Replace("ten quintillion three quintillion", "thirteen quintillion");
-			dirtyMessage = dirtyMessage.Replace("ten quintillion four quintillion", "fourteen quintillion");
-			dirtyMessage = dirtyMessage.Replace("ten quintillion five quintillion", "fifteen quintillion");
-			dirtyMessage = dirtyMessage.Replace("ten quintillion six quintillion", "sixteen quintillion");
-			dirtyMessage = dirtyMessage.Replace("ten quintillion seven quintillion", "seventeen quintillion");
-			dirtyMessage = dirtyMessage.Replace("ten quintillion eight quintillion", "eighteen quintillion");
-			dirtyMessage = dirtyMessage.Replace("ten quintillion nine quintillion", "nineteen quintillion");
-			
-			dirtyMessage = dirtyMessage.Replace("ten sextillion one sextillion", "eleven sextillion");
-			dirtyMessage = dirtyMessage.Replace("ten sextillion two sextillion", "twelve sextillion");
-			dirtyMessage = dirtyMessage.Replace("ten sextillion three sextillion", "thirteen sextillion");
-			dirtyMessage = dirtyMessage.Replace("ten sextillion four sextillion", "fourteen sextillion");
-			dirtyMessage = dirtyMessage.Replace("ten sextillion five sextillion", "fifteen sextillion");
-			dirtyMessage = dirtyMessage.Replace("ten sextillion six sextillion", "sixteen sextillion");
-			dirtyMessage = dirtyMessage.Replace("ten sextillion seven sextillion", "seventeen sextillion");
-			dirtyMessage = dirtyMessage.Replace("ten sextillion eight sextillion", "eighteen sextillion");
-			dirtyMessage = dirtyMessage.Replace("ten sextillion nine sextillion", "nineteen sextillion");
-			
-			dirtyMessage = dirtyMessage.Replace("ten septillion one septillion", "eleven septillion");
-			dirtyMessage = dirtyMessage.Replace("ten septillion two septillion", "twelve septillion");
-			dirtyMessage = dirtyMessage.Replace("ten septillion three septillion", "thirteen septillion");
-			dirtyMessage = dirtyMessage.Replace("ten septillion four septillion", "fourteen septillion");
-			dirtyMessage = dirtyMessage.Replace("ten septillion five septillion", "fifteen septillion");
-			dirtyMessage = dirtyMessage.Replace("ten septillion six septillion", "sixteen septillion");
-			dirtyMessage = dirtyMessage.Replace("ten septillion seven septillion", "seventeen septillion");
-			dirtyMessage = dirtyMessage.Replace("ten septillion eight septillion", "eighteen septillion");
-			dirtyMessage = dirtyMessage.Replace("ten septillion nine septillion", "nineteen septillion");
-			
-			dirtyMessage = dirtyMessage.Replace("ten octillion one octillion", "eleven octillion");
-			dirtyMessage = dirtyMessage.Replace("ten octillion two octillion", "twelve octillion");
-			dirtyMessage = dirtyMessage.Replace("ten octillion three octillion", "thirteen octillion");
-			dirtyMessage = dirtyMessage.Replace("ten octillion four octillion", "fourteen octillion");
-			dirtyMessage = dirtyMessage.Replace("ten octillion five octillion", "fifteen octillion");
-			dirtyMessage = dirtyMessage.Replace("ten octillion six octillion", "sixteen octillion");
-			dirtyMessage = dirtyMessage.Replace("ten octillion seven octillion", "seventeen octillion");
-			dirtyMessage = dirtyMessage.Replace("ten octillion eight octillion", "eighteen octillion");
-			dirtyMessage = dirtyMessage.Replace("ten octillion nine octillion", "nineteen octillion");
-			
-			dirtyMessage = dirtyMessage.Replace("ten nonillion one nonillion", "eleven nonillion");
-			dirtyMessage = dirtyMessage.Replace("ten nonillion two nonillion", "twelve nonillion");
-			dirtyMessage = dirtyMessage.Replace("ten nonillion three nonillion", "thirteen nonillion");
-			dirtyMessage = dirtyMessage.Replace("ten nonillion four nonillion", "fourteen nonillion");
-			dirtyMessage = dirtyMessage.Replace("ten nonillion five nonillion", "fifteen nonillion");
-			dirtyMessage = dirtyMessage.Replace("ten nonillion six nonillion", "sixteen nonillion");
-			dirtyMessage = dirtyMessage.Replace("ten nonillion seven nonillion", "seventeen nonillion");
-			dirtyMessage = dirtyMessage.Replace("ten nonillion eight nonillion", "eighteen nonillion");
-			dirtyMessage = dirtyMessage.Replace("ten nonillion nine nonillion", "nineteen nonillion");
-			
-			dirtyMessage = dirtyMessage.Replace("ten decillion one decillion", "eleven decillion");
-			dirtyMessage = dirtyMessage.Replace("ten decillion two decillion", "twelve decillion");
-			dirtyMessage = dirtyMessage.Replace("ten decillion three decillion", "thirteen decillion");
-			dirtyMessage = dirtyMessage.Replace("ten decillion four decillion", "fourteen decillion");
-			dirtyMessage = dirtyMessage.Replace("ten decillion five decillion", "fifteen decillion");
-			dirtyMessage = dirtyMessage.Replace("ten decillion six decillion", "sixteen decillion");
-			dirtyMessage = dirtyMessage.Replace("ten decillion seven decillion", "seventeen decillion");
-			dirtyMessage = dirtyMessage.Replace("ten decillion eight decillion", "eighteen decillion");
-			dirtyMessage = dirtyMessage.Replace("ten decillion nine decillion", "nineteen decillion");
-			
 			return dirtyMessage;
 		}
 		
@@ -385,36 +325,6 @@ namespace NumberToWords
 					break;
 				case 17: placeWord = "hundred quadrillion";
 					break;
-				case 18: 
-				case 19: placeWord = "quintillion";
-					break;
-				case 20: placeWord = "hundred quintillion";
-					break;
-				case 21: 
-				case 22: placeWord = "sextillion";
-					break;
-				case 23: placeWord = "hundred sextillion";
-					break;
-				case 24: 
-				case 25: placeWord = "septillion";
-					break;
-				case 26: placeWord = "hundred septillion";
-					break;
-				case 27: 
-				case 28: placeWord = "octillion";
-					break;
-				case 29: placeWord = "hundred octillion";
-					break;
-				case 30: 
-				case 31: placeWord = "nonillion";
-					break;
-				case 32: placeWord = "hundred nonillion";
-					break;
-				case 33: 
-				case 34: placeWord = "decillion";
-					break;
-				case 35: placeWord = "hundred decillion";
-					break;
 			}
 			
 			myWord = numberWord + " " + placeWord;
@@ -431,7 +341,7 @@ namespace NumberToWords
 			}
 			catch
 			{
-				richTextBox1.Text = "Number too big for Long variable type";
+				richTextBox1.Text = "A really big number...";
 			}
 			finally
 			{
