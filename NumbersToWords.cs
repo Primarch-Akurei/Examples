@@ -163,14 +163,14 @@ namespace NumberToWords
 			
 			switch(myNumber)
 			{
-					case 1: if((myIndex -1)%3 == 0)
-							{
-								numberWord = "ten";
-							}
-							else
-							{
-								numberWord = "one";
-							}
+				case 1: if((myIndex -1)%3 == 0)
+					{
+						numberWord = "ten";
+					}
+					else
+					{
+						numberWord = "one";
+					}
 					break;
 				case 2: if((myIndex -1)%3 == 0)
 							{
