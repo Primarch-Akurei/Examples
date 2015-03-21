@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
@@ -136,6 +136,16 @@ namespace NumberToWords
 			while(countOccurances(numberWord, "billion") > 1)
 			{
 				numberWord = replaceFirst(numberWord, "billion", "");
+			}
+			
+			while(countOccurances(numberWord, "trillion") > 1)
+			{
+				numberWord = replaceFirst(numberWord, "trillion", "");
+			}
+			
+			while(countOccurances(numberWord, "quadrillion") > 1)
+			{
+				numberWord = replaceFirst(numberWord, "quadrillion", "");
 			}
 			
 			numberWord = numberWord.Replace("  ", " ");
