@@ -24,6 +24,7 @@ namespace NumberToWords
 		{
 			string myNumberString = myInputNumber.ToString();
 			string stringBuffer = "";
+			string messyWord = "";
 			List<int> numberValueList = new List<int>{};
 			
 			for(int a = myNumberString.Length - 1; a >= 0; a--)
@@ -42,16 +43,16 @@ namespace NumberToWords
 			{
 				for(int b = 0; b < numberValueList.Count; b++)
 				{
-					richTextBox1.Text = richTextBox1.Text + getNumberWord(numberValueList[(numberValueList.Count  - 1) - b], (numberValueList.Count  - 1) - b) + " ";
+					messyWord = messyWord + getNumberWord(numberValueList[(numberValueList.Count  - 1) - b], (numberValueList.Count  - 1) - b) + " ";
 				}
 				
-				fixNumberWord();
+				fixNumberWord(messyWord);
 			}
 		}
 		
-		private void fixNumberWord()
+		private void fixNumberWord(string wordToFix)
 		{
-			string numberWord = richTextBox1.Text;
+			string numberWord = wordToFix;
 			
 			numberWord = numberWord.Replace("ten  one", "eleven");
 			numberWord = numberWord.Replace("ten  two", "twelve");
